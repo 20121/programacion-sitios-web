@@ -1,0 +1,41 @@
+header{
+    background-color: antiquewhite;
+}
+nav{
+    background-color: rgb(189, 36, 36)05, 91, 91);
+
+}
+section{
+    float: left;
+    width: 70%;
+background-color: chartreuse;
+}
+
+footer{
+    
+    background-color: rgb(99, 30, 210);
+    color: rgb(241, 238, 238);
+}
+.contenedor::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+aside{
+    float: left;
+    width: 30%;
+    
+background-color: rgb(18, 122, 122);
+}
+
+
+head{
+    background-color: darkslateblue;
+}
+
+
+h6{
+    background-color: lightcyan;
+    width: 70%;
+}
