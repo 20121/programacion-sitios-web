@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Grupo:301127_30" />
+<title>Unidad 2 - Fase 3 - Diseño e implementación frontend</title>
+<link rel="icon" type="image/png" href="media/one.png" />
+
+<link rel="stylesheet" href="css/uno.css" type="text/css"/>
+<link rel="stylesheet" href="css/fonts/style.css" type="text/css"/>
+	
+<script src="js/jquery-latest.js"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/2c36e9b7b1.js"></script>
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+<link rel="stylesheet" href="css/baguetteBox.min.css" />
+</head>
+<body>
+
+	<div class=" ir-arriba icon-chevron-small-up rounded-circle border border-danger"></div>
+	<div class="contenedor">
+	<div class="solluna">
+	<button class="switch" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+		</button></div></div>
+  <header style="background-color: transparent" >
+		
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		
+		
+  <!--<a class="navbar-brand" href="#">Navbar</a>-->
+		<img src="media/one.png" width="60" height="60" class="rounded-circle">&nbsp;&nbsp;&nbsp;
+		
+   <button class="navbar-toggler">
+  
+	<a href="#" class="icon-facebook"></a>
+  </button>
+<button class="navbar-toggler" >
+  
+	<a href="#" class="icon-twitter"></a>
+  </button>
+<button class="navbar-toggler" >
+  
+<a href="#" class="icon-google-with-circle"></a>
+  </button>
+<button class="navbar-toggler">
+  
+<a href="#" class="icon-pinterest"></a>
+  </button>
+<button class="navbar-toggler">
+  
+<a href="#" class="icon-instagram"></a>
+  </button>
+		
+<button class="navbar-toggler">
+  
+<a href="#" class="icon-youtube-with-circle"></a>
+  </button>
+		
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+		<li class="nav-item active">
+        <a  class="nav-link"  href="index.html"><b><span class="icon-home hh"></span></b></a>
+      </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <b> Adminitrador</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="crearbasededatos.php"><b>Crear Base de datos</b></a>
+          <a class="dropdown-item" href="creartabla.php"><b>Crear Tabla</b></a>
+          <a class="dropdown-item" href="pdf.php"><b>Generar reporte PDF</b></a>
+		  <a class="dropdown-item" href="backup.php"><b>Generar Backup</b></a>
+        </div>
+      </li>
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <b> Inventario</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="formulario1.html"><b>Usuario ingresar un producto</b></a>
+          <a class="dropdown-item" href="formulario2.html"><b>Usuario actualizar un producto</b></a>
+			    <a class="dropdown-item" href="formulario2dos.html"><b>Usuario actualizar un producto 2</b></a>
+          <a class="dropdown-item" href="formulario3.html"><b>Usuario eliminar un producto</b></a>
+		  <a class="dropdown-item" href="formulario4.html"><b>Usuario consultar un producto</b></a>
+        </div>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="utilidades.html"><b>Utilidades</b></a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+	  
+   </header>
+	<br><br><br><br>
+	
+
+		
+		
+	<div class="container">
+  
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/apple-pen-on-macbook-concept-1200x630-c-ar1.91.jpg" alt="Los Angeles" width="1366" height="7680" class="img-thumbnail" />
+    </div>
+    <div class="carousel-item">
+      <img src="media/XSTNQA7FMBGMHJT5BDADJSLOQY.jpg" alt="Chicago" width="1366" height="768" class="img-thumbnail" />
+    </div>
+    <div class="carousel-item">
+      <img src="media/01_epson_expression_photo_thumb800.jpg" alt="New York" width="1366" height="768" class="img-thumbnail" />
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+		
+<article>
+	<br/>
+	
+	<div class="container">
+		<div class="row">
+		<div class="col-xs-12 col-sm-12  col-md-4 col-lg-12 col-xl-12" style="border: 2px solid rgba(28,110,164,0.16); border-radius: 3px 3px 3px 3px;">
+			<center><h1><b>PRODUCTOS</b></h1></center>
+			</div></div>
+	
+<br/>
+		<div class="row">
+		<div class="col-xs-12 col-sm-12  col-md-12 col-lg-3 col-xl-4"  style="border: 2px solid rgba(28,110,164,0.16); border-radius: 3px 3px 3px 3px;">
+		<center><h2><b>COMPUTER STORE</b></h2></center>
+		<p>Computer store es una empresa nueva en el mercado enfocada totalmente a la tecnologia con ventas de productos tecnoloigcos y enfocado al desarrollo web y desarrollo movil, para todos sus clientes.  </p><center><img src="media/one.png" class="img-fluid rounded-circle"></center>
+			</div>
+			
+		
+		<div class="col-xs-12 col-sm-12  col-md-12 col-lg-1 col-xl-1"></div>
+				
+		<div class="col-xs-12 col-sm-12  col-md-12 col-lg-3 col-xl-3"  style="border: 2px solid rgba(28,110,164,0.16); border-radius: 3px 3px 3px 3px;">
+			<center><h2><b>MISION</b></h2></center>
+			<p> Trabajar con las herramientas y tecnologias para ser una gran empresa tecnologica.</p><center><img src="media/images.jpg" class="img-fluid"></center>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12  col-md-12 col-lg-1 col-xl-1"></div>
+		
+	
+		
+		<div class="col-xs-12 col-sm-12  col-md-12 col-lg-3 col-xl-3"  style="border: 2px solid rgba(28,110,164,0.16); border-radius: 3px 3px 3px 3px;">
+		<center><h2><b>VISION</b></h2></center>
+			<p>Nuestra vision es ser una empresa con vocacion empresarial internacional con los mejores productos y asi mismo tener personal compentene que ame la tecnologia y tener una gran compañia con nuestros clientes.  </p><center><img src="media/3905248_orig.jpg" class="img-fluid"></center>
+				<br/>
+			</div>
+			</div>
+			<br>
+		</div>
+		</article>
+	<br><br>
+		 <section class="gallery-block cards-gallery">
+   	<div class="container rounded">
+   		<div class="heading">
+   			<h2 style="text-align:center;">Catalogo de productos</h2>
+   		</div>
+   		<div class="row">
+   			<div class="col-md-6 col-lg-4">
+   				<div class="card border-0 transform-on-hover ">
+   					<a class="lightbox" href="media/9856696_1.jpg"><img src="media/9856696_1.jpg" class="card-img-top"></a>
+   					<div class="card-body ">
+   						<h6>Teclado y Mouse</h6>
+   						<p class="text-muted card-text">El mejor teclado y mouse marca gamer.</p>
+   					</div>
+   				</div>
+   			</div>
+   			
+   			<div class="col-md-6 col-lg-4">
+   				<div class="card border-0 transform-on-hover">
+   					<a class="lightbox" href="media/productos34_21037.jpg"><img src="media/productos34_21037.jpg" class="card-img-top"></a>
+   					<div class="card-body">
+   						<h6>Gabinete</h6>
+   						<p class="text-muted card-text">El mejor gabinete para gamer.</p>
+   					</div>
+   				</div>
+   			</div>
+   			
+   			<div class="col-md-6 col-lg-4">
+   				<div class="card border-0 transform-on-hover">
+   					<a class="lightbox" href="media/MNT-27GN750-Gallery-D03.jpg"><img src="media/MNT-27GN750-Gallery-D03.jpg" class="card-img-top"></a>
+   					<div class="card-body">
+   						<h6>Monitor</h6>
+   						<p class="text-muted card-text">los mejores monitores.</p>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+   		 <br> <br>
+   		
+   		<div class="row">
+   			<div class="col-md-6 col-lg-4">
+   				<div class="card border-0 transform-on-hover">
+   					<a class="lightbox" href="media/porttil-gamer-acer-nitro-5-156-fhd-core-i5-9na-1tb-8gb-128gb-m2-gtx-1650.jpg"><img src="media/porttil-gamer-acer-nitro-5-156-fhd-core-i5-9na-1tb-8gb-128gb-m2-gtx-1650.jpg" class="card-img-top"></a>
+   					<div class="card-body">
+   						<h6>Portatiles</h6>
+   						<p class="text-muted card-text">Portatiles gamer.</p>
+   					</div>
+   				</div>
+   			</div>
+   			
+   			<div class="col-md-6 col-lg-4">
+   				<div class="card border-0 transform-on-hover">
+   					<a class="lightbox" href="media/5.png"><img src="media/5.png" class="card-img-top"></a>
+   					<div class="card-body">
+   						<h6>Diaemas</h6>
+   						<p class="text-muted card-text">Diaemas gamer.</p>
+   					</div>
+   				</div>
+   			</div>
+   			
+   			<div class="col-md-6 col-lg-4">
+   				<div class="card border-0 transform-on-hover">
+   					<a class="lightbox" href="media/descansapies.jpg"><img src="media/descansapies.jpg" class="card-img-top"></a>
+   					<div class="card-body">
+   						<h6>Sillas</h6>
+   						<p class="text-muted card-text">Sillas gamer.</p>
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+		<br><br>
+   	</div>
+			 
+   </section>
+		<br>
+
+	<br>
+	
+
+<footer>
+	<div class="container-fluid" style=" border-top: black 2px solid; border-radius: 15px 15px 0px 0px; box-shadow: -2px -2px 2px 2px #000000; background-color: #FBFBF4; background: -webkit-linear-gradient(#c5ecfc,#d8f7f9);">
+	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
+			<p  clss="pin"> <b><center>Que hacemos?<br/>
+				
+				Desarrollo web
+				<br/>
+				Desarrollo movil
+				<br/>
+				Venta de tecnologia</center></b></p>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
+				<p  clss="pin"> <b><center>Copyright <sapn class="icon-creative-commons"> </sapn> Computer Store. All rights reserved.</center></b>
+				<a href="index.html" class="icon-home"></a></p>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
+				
+			<p  clss="pin"> <b><center>Contactenos<br/>
+				<span class="icon-mail"></span>&nbsp; Al corero: computerstore@store.com.co</center></b></p>
+			</div>
+			
+</div>
+	</div>
+	
+	</footer>
+	
+	<div class="d-none d-lg-block">
+	<div class="social">
+		<ul>
+			<li><a href="#" target="_blank" class="icon-facebook"  style=" border-radius: 10px 0px 0px 0px;"></a></li>
+			<li><a href="#" target="_blank" class="icon-twitter"></a></li>
+			<li><a href="#" target="_blank" class="icon-google-with-circle"></a></li>
+			<li><a href="#" target="_blank" class="icon-pinterest"></a></li>
+			<li><a href="#" class="icon-instagram-with-circle"></a></li>
+			<li><a href="#" class="icon-youtube-with-circle"  style=" border-radius: 0px 0px 0px 10px;"></a></li>
+		</ul>
+	</div></div>
+	<script src="js/main.js"></script>	
+	
+<script> $(document).ready(function(){
+ 
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(200);
+		} else {
+			$('.ir-arriba').slideUp(200);
+		}
+	});
+ 
+}); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="js/popper.min.js"></script>
+	
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+    <script>
+	      baguetteBox.run('.cards-gallery', {animation: 'slideIn'});
+	  </script>
+</body>
+</html>

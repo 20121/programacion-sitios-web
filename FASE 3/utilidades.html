@@ -1,0 +1,371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Grupo:301127_30" />
+<title>Unidad 2 - Fase 3 - Diseño e implementación frontend</title>
+<link rel="icon" type="image/png" href="media/one.png" />
+
+<link rel="stylesheet" href="css/dos.css" type="text/css"/>
+<link rel="stylesheet" href="css/fonts/style.css" type="text/css"/>
+	
+<script src="js/jquery-latest.js"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/2c36e9b7b1.js"></script>
+</head>
+<body>
+<div class=" ir-arriba icon-chevron-small-up rounded-circle border border-danger"></div>
+	<div class="contenedor">
+	<div class="solluna">
+	<button class="switch" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+		</button></div></div>
+  <header style="background-color: transparent" >
+		
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		
+		
+  <!--<a class="navbar-brand" href="#">Navbar</a>-->
+		<img src="media/one.png" width="60" height="60" class="rounded-circle">&nbsp;&nbsp;&nbsp;
+		
+   <button class="navbar-toggler">
+  
+	<a href="#" class="icon-facebook"></a>
+  </button>
+<button class="navbar-toggler" >
+  
+	<a href="#" class="icon-twitter"></a>
+  </button>
+<button class="navbar-toggler" >
+  
+<a href="#" class="icon-google-with-circle"></a>
+  </button>
+<button class="navbar-toggler">
+  
+<a href="#" class="icon-pinterest"></a>
+  </button>
+<button class="navbar-toggler">
+  
+<a href="#" class="icon-instagram"></a>
+  </button>
+		
+<button class="navbar-toggler">
+  
+<a href="#" class="icon-youtube-with-circle"></a>
+  </button>
+		
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+		<li class="nav-item active">
+        <a  class="nav-link"  href="index.html"><span class="icon-home hh"></span></a>
+      </li>
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <b> Adminitrador</b>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="crearbasededatos.php"><b>Crear Base de datos</b></a>
+          <a class="dropdown-item" href="creartabla.php"><b>Crear Tabla</b></a>
+          <a class="dropdown-item" href="pdf.php"><b>Generar reporte PDF</b></a>
+		  <a class="dropdown-item" href="backup.php"><b>Generar Backup</b></a>
+        </div>
+      </li>
+		<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Inventario
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="formulario1.html"><b>Usuario ingresar un producto</b></a>
+          <a class="dropdown-item" href="formulario2.html"><b>Usuario actualizar un producto</b></a>
+	     <a class="dropdown-item" href="formulario2dos.html"><b>Usuario actualizar un producto 2</b></a>
+          <a class="dropdown-item" href="formulario3.html"><b>Usuario eliminar un producto</b></a>
+		  <a class="dropdown-item" href="formulario4.html"><b>Usuario consultar un producto</b></a>
+        </div>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="utilidades.html">Utilidades</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+	  
+   </header>
+	
+		<br><br><br><br>
+	<section>
+		
+	
+	<div class="container">
+  
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="media/apple-pen-on-macbook-concept-1200x630-c-ar1.91.jpg" alt="Los Angeles" width="1366" height="7680" class="img-thumbnail" />
+    </div>
+    <div class="carousel-item">
+      <img src="media/XSTNQA7FMBGMHJT5BDADJSLOQY.jpg" alt="Chicago" width="1366" height="768" class="img-thumbnail" />
+    </div>
+    <div class="carousel-item">
+      <img src="media/01_epson_expression_photo_thumb800.jpg" alt="New York" width="1366" height="768" class="img-thumbnail" />
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+		
+<article>
+<div class="container">
+	
+	<h1>Calculamos el valor de la ganancia y valor de la venta</h1>
+	<script>
+	
+	function  resultados(){
+		
+	var a = document.f1.a.value;	
+			
+	var b = document.f1.b.value;	
+					
+	var c = document.f1.c.value;
+		
+	var d = document.f1.d.value;
+	
+	var e = document.f1.e.value;
+		
+		
+    r=parseFloat(a)*(parseFloat(b)/100);
+	document.f1.d.value=r;		
+		
+    r=parseFloat(a)+parseFloat(a)*(parseFloat(b)/100)+parseFloat(a)*(parseFloat(c)/100);		
+	document.f1.e.value=r;	
+		
+  	
+	}
+		
+	
+	function solonumeros(e){
+	
+	key=e.keyCode || e.which; 
+	
+		teclado=String.fromCharCode(key);
+		numeros="0123456789";
+		especiales="8-37-38-46";//array
+	    teclado_especial=false;
+		
+		for(var i in especiales){
+			if(key==especiales[i]){
+				teclado_especial=true;
+				
+			}
+			
+		}
+		
+		if(numeros.indexOf(teclado)==-1 && !teclado_especial){
+			return false;
+			
+		}
+		
+	}	
+
+	</script>
+	
+	
+	<fieldset>	
+	
+<form name="f1" action="calculadora.html" method="post">
+	<div class="form-group">
+		
+	<center><label for="numero1" style="font-size:30px;"><b>Valor de Compra:</b></label>
+	<input type="text" class="form-control" id="a" placeholder="Ingres su numero" name="a" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+		<br>
+		
+		<center><label for="numero2" style="font-size: 30px;"><b>% Utilidad o ganancia :</b></label>
+		<input type="text" class="form-control" id="b" placeholder="Ingrese el valor de porcentaje de la ganancia" name="b" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+		
+		<br>
+		
+		<center><label for="numero3" style="font-size: 30px;"><b>% Ingrese el valor del iva:</b></label>
+		<input type="text" class="form-control" id="c" placeholder="Ingrese el porcentaje del iva" name="c" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+	 
+		<br>
+ 	
+	<center><input type="button" name="" value="Resultado del valor de la ganancia y venta" onClick="resultados()" class="btn btn-success" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+		<br><br>
+	
+	<center><input type="button" name="" value="limpiar" onClick="reset()" class="btn btn-primary" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+	
+	<br><br>
+	<fieldset disabled>
+	<center><label for="resultado" style="font-size: 30px;"><b>Resultado de la ganancia:</b></label>
+	<input type="text" class="form-control" id="d" name="d" placeholder="Resultado de la ganancia" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+	<br>
+	<center><label for="resultado" style="font-size: 30px;"><b>Resultado de la venta:</b></label>
+	<input type="text" class="form-control" id="e" name="e" placeholder="Resultado de la venta" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+	</fieldset>
+	</div>
+		
+	</form>
+	
+	</fieldset>	
+	<br>
+	</div>
+	<br>
+
+<div class="container">
+
+  <h1>Conversor de unidades</h1>
+
+
+<script>
+function calcular(){
+    
+    var y = document.f2.y.value;
+    var w= document.f2.w1.value;
+    var x = document.f2.w2.value;
+    var h = document.f2.z.value;
+    h=(parseFloat(y)*parseFloat(x))/parseFloat(w);
+   document.f2.z.value=h;
+    
+}
+
+</script> 
+
+
+<fieldset>
+<form name="f2" action="conversor.html" method="POST">
+
+  <br>
+ <center> <input type="text" class="form-control" id="y" name="y" placeholder="Digite aquí el valor a convertir" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
+  
+  <br>
+<center><select name="w1" class="form-control" style="width:100%; max-width:900px; padding: 5px 5px; 5px;">
+  <option value="10000000000" style="color: black" >byte</option>
+  <option value="1000000" style="color: black" >kilobyte</option>
+  <option value="1000" style="color: black" >megabyte</option>
+  <option value="1" style="color: brown">gigabyte</option>
+  <option value="0.001" style="color: brown">terabyte</option>
+</select></center>
+<br>
+ <center> <input type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center></center>
+<br>
+<center><select name="w2" class="form-control" style="width:100%; max-width:900px; padding: 5px 5px; 5px;">
+  <option value="10000000000" style="color: black" >byte</option>
+  <option value="1000000" style="color: black" >kilobyte</option>
+  <option value="1000" style="color: black" >megabyte</option>
+  <option value="1" style="color: brown">gigabytes</option>
+  <option value="0.001" style="color: brown">terabyte</option>
+	</select></center>
+	<br>
+ </fieldset>
+	
+	
+<fieldset  disabled>
+ <center> <input type="text" class="form-control" id="z" name="z" placeholder="Resultado" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center><br>
+</fieldset>
+
+<br>
+ 	</form>
+
+	</div>
+
+
+
+
+		</article>
+		 
+</section>	
+	<br/>
+<footer>
+	<div class="container-fluid" style=" border-top: black 2px solid; border-radius: 15px 15px 0px 0px; box-shadow: -2px -2px 2px 2px #000000; background-color: #FBFBF4; background: -webkit-linear-gradient(#c5ecfc,#d8f7f9);">
+	
+		<div class="row">
+			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
+			<p  clss="pin"> <b><center>Que hacemos?<br/>
+				
+				Desarrollo web
+				<br/>
+				Desarrollo movil
+				<br/>
+				Venta de tecnologia</center></b></p>
+			</div>
+			
+			
+			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
+				<p  clss="pin"> <b><center>Copyright <sapn class="icon-creative-commons"> </sapn> Computer Store. All rights reserved.</center></b>
+				<a href="index.html" class="icon-home"></a></p>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
+				
+			<p  clss="pin"> <b><center>Contactenos<br/>
+				<span class="icon-mail"></span>&nbsp; Al corero: computerstore@store.com.co</center></b></p>
+			</div>
+			
+</div>
+	</div>
+	
+	</footer>
+	
+	<div class="d-none d-lg-block">
+	<div class="social">
+		<ul>
+			<li><a href="#" target="_blank" class="icon-facebook"  style=" border-radius: 10px 0px 0px 0px;"></a></li>
+			<li><a href="#" target="_blank" class="icon-twitter"></a></li>
+			<li><a href="#" target="_blank" class="icon-google-with-circle"></a></li>
+			<li><a href="#" target="_blank" class="icon-pinterest"></a></li>
+			<li><a href="#" class="icon-instagram-with-circle"></a></li>
+			<li><a href="#" class="icon-youtube-with-circle"  style=" border-radius: 0px 0px 0px 10px;"></a></li>
+		</ul>
+	</div></div>
+	<script src="js/main.js"></script>	
+	
+<script> $(document).ready(function(){
+ 
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(200);
+		} else {
+			$('.ir-arriba').slideUp(200);
+		}
+	});
+ 
+}); </script>
+</body>
+</html>

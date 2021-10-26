@@ -1,0 +1,210 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	text-decoration: none;
+	
+	
+}
+
+.solluna{position: fixed;
+margin-top:82px;}
+.fa-sun, .fa-moon{margin-top: 6px;
+margin-left: 2px;}
+
+
+body.dark{background-color:#EFEDED;}
+
+.switch{
+  background-color:#EDEDED;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: orange;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl{background-color:#EFEDED;}
+
+.carousel slide{width: 100%;
+height: auto;
+max-width: 1366px;
+max-height: 168px;}
+
+.icon-facebook{  color:#3b5998; text-decoration: none;}
+.icon-facebook:hover{text-decoration: none; color:#3b5998;}
+
+.icon-twitter{  color:#00abf0; text-decoration: none;}
+.icon-twitter:hover{text-decoration: none; color:#00abf0;}
+
+.icon-google-with-circle{  color:#d95232; text-decoration: none;}
+.icon-google-with-circle:hover{text-decoration: none; color:#d95232;}
+
+
+.icon-pinterest{  color:#ae181f; text-decoration: none;}
+.icon-pinterest:hover{text-decoration: none; color:#ae181f;}
+
+.icon-instagram{  color:#666666; text-decoration: none;}
+.icon-instagram:hover{text-decoration: none; color:#666666;}
+
+.icon-youtube-with-circle{  color:#c4302b; text-decoration: none;}
+.icon-youtube-with-circle:hover{text-decoration: none; color:#c4302b;}
+
+.social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	right: 0; /* Establecemos la barra en la izquierda */
+	top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #FFF;
+		padding: 10px 10px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+ 
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-twitter {background: #00abf0;}
+	.social ul li .icon-google-with-circle {background: #d95232;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-instagram-with-circle {background: #666666;}
+	.social ul li .icon-youtube-with-circle {background: #c4302b;}
+ 
+	.social ul li a:hover {
+		background: #FFFF; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: -10px 0px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+.icon-facebook-with-circle{
+
+text-decoration: none;
+font-size:25px;
+colr:#3b5998;}
+.icon-twitter-with-circle{
+text-decoration: none;
+
+font-size:25px;
+color:#00abf0;}
+
+.icon-google{
+
+text-decoration: none;
+font-size:25px;
+color:#d95232;}
+
+.icon-pinterest-with-circle{
+
+text-decoration: none;
+font-size:25px;
+color:#ae181f;}
+.icon-instagram{
+
+text-decoration: none;
+font-size:25px;
+color:#666666;}
+
+.icon-youtube{
+
+text-decoration: none;
+font-size:25px;
+color: #c4302b;}
+
+
+
+.icon-facebook-with-circle:hover, .icon-twitter-with-circle:hover, .icon-google:hover, .icon-pinterest-with-circle:hover,  .icon-instagram:hover, .icon-youtube:hover {
+	text-decoration: none;
+	color: #000;
+
+}
+
+
+
+.img-fluid{width: 100%;
+height: auto;
+max-width: 1366px;
+max-height: 768px;}
+
+p{text-align: justify;}
+
+
+.pin{text-align: center;
+font-weight: bold;
+font-size: 36px;
+position:absolute;
+margin-top: -1450px;}
+
+fieldset{background-color: #e3e4e5; border-radius: 10px;}
+
+
+.icon-home{font-size: 30px; color: black; text-decoration: none;}  
+.icon-home:hover{text-decoration: none; background-color: transparent; text-align: center;}
+.icon-mail{font-size: 30px;}
+.hh{margin-left: 0px;}
+
+h1{
+	text-align: center;
+	font-weight: bold;
+}
+
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:10px;
+	right:10px;
+	z-index: 1;
+	
+}
