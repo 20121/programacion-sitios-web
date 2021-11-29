@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Grupo:301127_30" />
+<meta name="author" content="Grupo:301127_32" />
 <title>Actualizado los Datos</title>
 <link rel="icon" type="image/png" href="media/one.png" />
 
@@ -91,7 +91,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="formulario1.html"><b>Usuario ingresar un producto</b></a>
                <a class="dropdown-item" href="formulario2.html"><b>Usuario actualizar un producto</b></a>
-			    <a class="dropdown-item" href="formulario2dos.html"><b>Usuario actualizar un producto 2</b></a>
+			    
           <a class="dropdown-item" href="formulario3.html"><b>Usuario eliminar un producto</b></a>
 		  <a class="dropdown-item" href="formulario4.html"><b>Usuario consultar un producto</b></a>
         </div>

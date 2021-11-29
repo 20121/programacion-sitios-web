@@ -91,7 +91,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="formulario1.html"><b>Usuario ingresar un producto</b></a>
                <a class="dropdown-item" href="formulario2.html"><b>Usuario actualizar un producto</b></a>
-			    <a class="dropdown-item" href="formulario2dos.html"><b>Usuario actualizar un producto 2</b></a>
+			    
           <a class="dropdown-item" href="formulario3.html"><b>Usuario eliminar un producto</b></a>
 		  <a class="dropdown-item" href="formulario4.html"><b>Usuario consultar un producto</b></a>
         </div>
