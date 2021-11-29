@@ -7,8 +7,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="author" content="Grupo:301127_30" />
-<title>Unidad 2 - Fase 3 - Diseño e implementación frontend</title>
-<link rel="icon" type="image/png" href="media/descarga.png" />
+<title>Actualizado los Datos</title>
+<link rel="icon" type="image/png" href="media/one.png" />
 
 <link rel="stylesheet" href="css/formulario2.css" type="text/css"/>
 <link rel="stylesheet" href="css/fonts/style.css" type="text/css"/>
@@ -19,6 +19,7 @@
 <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/2c36e9b7b1.js"></script>
+		
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 
 
   <!--<a class="navbar-brand" href="#">Navbar</a>-->
-		<img src="media/descarga.png" width="60" height="60" class="rounded-circle">&nbsp;&nbsp;&nbsp;
+		<img src="media/one.png" width="60" height="60" class="rounded-circle">&nbsp;&nbsp;&nbsp;
 
    <button class="navbar-toggler">
 
@@ -77,23 +78,26 @@
          <b> Adminitrador</b>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			<a class="dropdown-item" href="crearbasededatos.php"><b>Crear Base de datos</b></a>
-			 <a class="dropdown-item" href="creartabla.php"><b>Crear Tabla</b></a>
-			 <a class="dropdown-item" href="pdf.php"><b>Generar reporte PDF</b></a>
-			 <a class="dropdown-item" href="backup.php"><b>Generar Backup</b></a>
-		   </div>
+         <a class="dropdown-item" href="crearbasededatos.php"><b>Crear Base de datos</b></a>
+          <a class="dropdown-item" href="creartabla.php"><b>Crear Tabla</b></a>
+          <a class="dropdown-item" href="pdf.php"><b>Generar reporte PDF</b></a>
+		  <a class="dropdown-item" href="backup.php"><b>Generar Backup</b></a>
+        </div>
       </li>
 		<li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          <b> Inventario</b>
         </a>
-		<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			<a class="dropdown-item" href="formulario1.html"><b>ingresar un producto</b></a>
-		  <a class="dropdown-item" href="formulario2.html"><b>actualizar un producto</b></a>
-			<a class="dropdown-item" href="#"><b>eliminar un producto</b></a>
-			<a class="dropdown-item" href="formulario4.html"><b>consultar un producto</b></a>
-		  </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="formulario1.html"><b>Usuario ingresar un producto</b></a>
+               <a class="dropdown-item" href="formulario2.html"><b>Usuario actualizar un producto</b></a>
+			    <a class="dropdown-item" href="formulario2dos.html"><b>Usuario actualizar un producto 2</b></a>
+          <a class="dropdown-item" href="formulario3.html"><b>Usuario eliminar un producto</b></a>
+		  <a class="dropdown-item" href="formulario4.html"><b>Usuario consultar un producto</b></a>
+        </div>
       </li>
+
+
 
       <li class="nav-item">
         <a class="nav-link" href="utilidades.html"><b>Utilidades</b></a>
@@ -106,7 +110,7 @@
    </header>
 
 	<br><br><br><br>
-	<section>
+
 
 
 	<div class="container">
@@ -144,97 +148,32 @@
 </div>
 
 </div>
+<br><br>
+	<center style="font-size: 38px;">
+<?php
+// variables
 
-<article>
-	<div class="container">
-		<script>
-
-			function solonumeros(e){
-
-			key=e.keyCode || e.which;
-
-				teclado=String.fromCharCode(key);
-				numeros="0123456789";
-				especiales="8-37-38-46";//array
-				teclado_especial=false;
-
-				for(var i in especiales){
-					if(key==especiales[i]){
-						teclado_especial=true;
-
-					}
-
-				}
-
-				if(numeros.indexOf(teclado)==-1 && !teclado_especial){
-					return false;
-
-				}
-
-			}
-
-		function sololetras(e){
-
-			key=e.keyCode || e.which;
-			teclado=String.fromCharCode(key).toLowerCase();
-			letras=" abcdefghijklmñopqrstuvwxyz";
-			especiales="8-37-38-46-164";//array
-			teclado_especial=false;
-			for(var i in especiales){
-					if(key==especiales[i]){
-						teclado_especial=true;break;
-
-					}
-
-				}
-				if(letras.indexOf(teclado)==-1 && !teclado_especial){
-					return false;
-
-				}
-		}
-
-			</script>
-	<h1> actualizar un producto</h1>
-
-	<fieldset>
-<form name="f4"   action="actualizar.php" role="form" method="POST">
-
-	<div class="form-group">
-	<center><label for="numero1" style="font-size: 30px;"><b>Código de producto:</b></label>
-	<input type="text" class="form-control"  id="codigo" placeholder="Ingrese su codigo" name="codigo" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
-
-		<br>
-		<center><label for="numero1" style="font-size: 30px;"><b>Nombre de producto:</b></label>
-	<input type="text" class="form-control" id="NProducto"  placeholder="Ingrese su codigo" name="NProducto"  required="required" onkeypress="return sololetras(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
-		<br>
-		<center><label for="numero1" style="font-size: 30px;"><b>Marca del producto:</b></label>
-	<input type="text" class="form-control" id="MProducto" placeholder="Ingrese su codigo" name="MProducto" required="required" onkeypress="return sololetras(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
-		<br>
-		<center><label for="numero1" style="font-size: 30px;"><b>Precio de compra:</b></label>
-	<input type="text" class="form-control" id="PCompra" placeholder="Ingrese su codigo" name="PCompra" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
-		<br>
-
-     <center><label for="numero1" style="font-size: 30px;"><b>Cantidad comprada :</b></label>
-	<input type="text" class="form-control" id="CCompra" placeholder="Ingrese su codigo" name="CCompra" required="required" onkeypress="return solonumeros(event)" onpaste="return false" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"></center>
-		<br>
-
-   <center><button type="submit" name="submit" value="BORRAR producto"  class="btn btn-outline-dark" style="width:100%; max-width:900px; padding: 20px 20px; 20px;"><b>BORRAR PRODUCTO</b></button></center>
-		<br>
-		
-	</div>
-
-	</form>
-	</fieldset>
-<br>
-
-	</div>
+date_default_timezone_set("America/Bogota");
+$dbhost="localhost";
+$dbuser="root";
+$dbpass="12345678";
+$dbname="BDUNAD301127_30";
 
 
 
-		</article>
+//Para utilizar Mysqldump y realizar el respaldo, se debe declarar una variable haciendo referencia a la ubicacion del archivo mysqldump.exe
+$mysqldump='"../../MySQL/bin/mysqldump.exe"';
+$backup_file = '"backups\"'.$dbname. "-" .date("Y-m-d-H-i-s"). ".sql";
+system("$mysqldump --no-defaults -u $dbuser -p$dbpass $dbname > $backup_file");
 
-</section>
-	<br/><br/><br/>
+
+?>
+
+
+<h2>COPIA DE SEGURIDAD REALIZADA SATISFACTORIAMENTE</h2>
+
+</center>
+	<br><br>
 <footer>
 	<div class="container-fluid" style=" border-top: black 2px solid; border-radius: 15px 15px 0px 0px; box-shadow: -2px -2px 2px 2px #000000; background-color: #FBFBF4; background: -webkit-linear-gradient(#c5ecfc,#d8f7f9);">
 
@@ -251,14 +190,14 @@
 
 
 			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
-				<p  clss="pin"> <b><center>Copyright <sapn class="icon-creative-commons"> </sapn> PC ELECTRONICS. All rights reserved.</center></b>
+				<p  clss="pin"> <b><center>Copyright <sapn class="icon-creative-commons"> </sapn> Computer Store. All rights reserved.</center></b>
 				<a href="index.html" class="icon-home"></a></p>
 			</div>
-			
+
 			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
-				
+
 			<p  clss="pin"> <b><center>Contactenos<br/>
-				<span class="icon-mail"></span>&nbsp; corero: PCElectronics@services.com.co</center></b></p>
+				<span class="icon-mail"></span>&nbsp; Al corero: computerstore@store.com.co</center></b></p>
 			</div>
 
 </div>
@@ -296,5 +235,7 @@
 	});
  
 }); </script>
+
 </body>
 </html>
+
