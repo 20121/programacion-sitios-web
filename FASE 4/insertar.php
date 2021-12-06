@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Grupo:301127_30" />
+<meta name="author" content="Grupo:301127_32" />
 <title>Actualizado los Datos</title>
 <link rel="icon" type="image/png" href="media/one.png" />
 
@@ -172,7 +172,7 @@ if (!$conn) {
 }
 
 
-$sql = "INSERT INTO Tabla301127_30 (codigo, Nombre_Producto, Marca_Producto, Precio_Compra, Cantidad_Compra) VALUES ('$i', '$n', '$a', '$e', '$o')";
+$sql = "INSERT INTO Tabla301127_32 (codigo, Nombre_Producto, Marca_Producto, Precio_Compra, Cantidad_Compra) VALUES ('$i', '$n', '$a', '$e', '$o')";
 
 if (mysqli_query($conn, $sql)) {
  
@@ -241,7 +241,7 @@ if (mysqli_query($conn, $sql)) {
 
 
  <?php
-$verificar_codigo = mysqli_query($conn, "SELECT * FROM tabla301127_30 WHERE Codigo ='$i'");
+$verificar_codigo = mysqli_query($conn, "SELECT * FROM tabla301127_32 WHERE Codigo ='$i'");
 if(mysqli_num_rows($verificar_codigo) > 0){
 	echo'<script>
 	alert("El Codigo esta en uso");

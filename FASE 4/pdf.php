@@ -39,7 +39,7 @@ if (!$conec) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$query_select = 'SELECT * FROM Tabla301127_30';
+$query_select = 'SELECT * FROM Tabla301127_32';
 $result = mysqli_query($conec,$query_select );
 
 if (mysqli_num_rows($result) > 0) {
