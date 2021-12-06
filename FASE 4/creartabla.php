@@ -154,7 +154,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "12345678";
-$dbname = "BDUNAD301127_30";
+$dbname = "BDUNAD301127_32";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -164,7 +164,7 @@ if (!$conn) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE Tabla301127_30 (
+$sql = "CREATE TABLE Tabla301127_32 (
   Codigo int(30) PRIMARY KEY NOT NULL,
   Nombre_Producto varchar(30) NOT NULL,
   Marca_Producto varchar(30) NOT NULL,

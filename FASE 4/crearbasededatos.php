@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Grupo:301127_30" />
+<meta name="author" content="Grupo:301127_32" />
 <title>Crear Base De Datos</title>
 <link rel="icon" type="image/png" href="media/one.png" />
 
@@ -163,7 +163,7 @@ if (!$conn) {
 }
 
 // Create database
-$sql = "CREATE DATABASE BDUNAD301127_30";
+$sql = "CREATE DATABASE BDUNAD301127_32";
 if (mysqli_query($conn, $sql)) {
     echo "<b>Base de datos creada satisfactoriamente</b>";
 } else {

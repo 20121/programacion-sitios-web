@@ -154,7 +154,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "12345678";
-$dbname = "BDUNAD301127_30";
+$dbname = "BDUNAD301127_32";
 
 
 // Create connection

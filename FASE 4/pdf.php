@@ -6,7 +6,7 @@ date_default_timezone_set("America/Bogota");
 $host = "localhost";
 $user = "root";
 $cont = "12345678";
-$db = "BDUNAD301127_30";
+$db = "BDUNAD301127_32";
 
 $pdf = new FPDF();
 $pdf->AddPage();

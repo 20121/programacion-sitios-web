@@ -156,7 +156,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "12345678";
-$dbname = "BDUNAD301127_30";
+$dbname = "BDUNAD301127_32";
 
 
 // Create connection
@@ -171,7 +171,7 @@ $codigo = $_POST['codigo'];
 
 
 // sql to delete a record
-$sql = "DELETE FROM Tabla301127_30 WHERE codigo=$codigo";
+$sql = "DELETE FROM Tabla301127_32 WHERE codigo=$codigo";
 
 if (mysqli_query($conn, $sql)) {
 	?>
