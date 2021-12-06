@@ -190,14 +190,14 @@ system("$mysqldump --no-defaults -u $dbuser -p$dbpass $dbname > $backup_file");
 
 
 			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
-				<p  clss="pin"> <b><center>Copyright <sapn class="icon-creative-commons"> </sapn> Computer Store. All rights reserved.</center></b>
+				<p  clss="pin"> <b><center>Copyright <sapn class="icon-creative-commons"> </sapn> pc electronics. All rights reserved.</center></b>
 				<a href="index.html" class="icon-home"></a></p>
 			</div>
 
 			<div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 col-xl-4 ">
 
 			<p  clss="pin"> <b><center>Contactenos<br/>
-				<span class="icon-mail"></span>&nbsp; Al corero: computerstore@store.com.co</center></b></p>
+				<span class="icon-mail"></span>&nbsp; Al corero: PCElectronics@services.com.co</center></b></p>
 			</div>
 
 </div>

@@ -26,13 +26,13 @@ th {text-align: left;}
 <?php
 $q = intval($_GET['p']);
 
-$con = mysqli_connect('localhost','root','12345678','BDUNAD301127_30');
+$con = mysqli_connect('localhost','root','12345678','BDUNAD301127_32');
 if (!$con) {
   die('Could not connect: ' . mysqli_error($con));
 }
 
 mysqli_select_db($con,"ajax_demo");
-$sql="SELECT * FROM Tabla301127_30 WHERE Codigo = '".$q."'";
+$sql="SELECT * FROM Tabla301127_32 WHERE Codigo = '".$q."'";
 $result = mysqli_query($con,$sql);
 ?>
 <table class="table table-bordered" >
